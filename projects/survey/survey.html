@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body class="container">
+    <h1 class="big-header">Survey Form</h1>
+    <form class="main-content" action="animatedloginform.html">
+
+        <h4 class="small-header">Let us know how we can improve This Site</h4>
+
+        <div class="survey-row">
+            <div class="survey-row-title">*Name</div>
+       
+            <input class="survey-row-input" type="text" name="Name" placeholder="Enter your name">
+        </div>
+
+        <div class="survey-row">
+            <div class="survey-row-title">*Email</div>
+
+            <input class="survey-row-input" type="text" placeholder="Enter your Email">
+        </div>
+
+        <div class="survey-row">
+            <div class="survey-row-title">*Age</div>
+            
+            <input class="survey-row-input" type="number" placeholder="Age">
+        </div>
+    
+        <div class="survey-row">
+            <div class="survey-row-title">Which option best describes your current role?</div>
+            <select class="drop-down-list">
+                <option value="1">Student</option>
+                <option value="2">Parent</option>
+                <option value="3">Senior Citizen</option>
+            </select>
+            <!--input here should be like a drop down list that has different roles to selct from 
+            
+                That's what the select element is for
+            --> 
+        </div>
+
+        <div class="survey-row">
+            <div class="survey-row-title">*How likely is that you would recommend <strong>This Site</strong> to a friend?</div>
+
+            <span class="survey-input-block">
+                <div class="input-selector"><input type="radio" name="radio" value="Fuck yeah" checked class="rad"> Fuck yeah</input></div>
+                <div class="input-selector"><input type="radio" name="radio" value="Maybe" class="rad"> Maybe</input></div>
+                <div class="input-selector"><input type="radio" name="radio" value="Fuck no" class="rad"> Fuck no</input></div>
+            </span><!--these button need to work together, i.e i should be able to only select one
+            
+                If you give them the same name attribute they all work together
+            -->
+        </div>
+
+        <div class="survey-row">
+            <div class="survey-row-title">What do you like most about <strong>This Site?</strong></div>
+            <select class="drop-down-list">
+                <option value="Select an option">Select an option</option>
+                <option value="Ease of use">Ease of use</option>
+                <option value="Fluent Navigation">Fluent Navigation</option>
+                <option value="Easy to find my way around">Easy to find my way around</option>
+                <option value="I'm not sure">I'm not sure</option>
+            </select>
+        </div>
+
+        <div class="survey-row">
+            <div class="survey-row-title">Things that should be improved in the future(Check all that apply)</div>
+
+            <span class="survey-input-block">
+                <div class="input-selector"><input type="checkbox" class="chkbx"> The navigation</input></div>
+                <div class="input-selector"><input type="checkbox" class="chkbx"> The menus</input></div>
+                <div class="input-selector"><input type="checkbox" class="chkbx"> The overall layout</input></div>
+            </span> 
+        </div>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</body>
+</html>
